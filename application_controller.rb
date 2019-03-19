@@ -10,4 +10,14 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  post '/result' do
+    @user_date= params[:user_date]
+    @result=Pod.new(@user_date)
+    puts "from controller:"
+    puts @result.title
+    erb :result
+  end
+  
+  
+  
 end

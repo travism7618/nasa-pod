@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>title</title>
+    <title>NASA POD</title>
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery -->
@@ -19,10 +19,12 @@
   <body>
     
     <div class="container-fluid">
-      <h1>Hello World!</h1>
+      <h1>Wlcome to the NASA "Picture of the day" app!</h1>
       <form method="post" action="/result">
-        <input type="text" name="input1"><br>
-        <input type="submit" value="Submit">
+        <!--Remember to put the max day and find a way to set it to the current date-->
+      
+        Enter any date before today for a designated NASA picture or video:<input type="date" name="user_date" min="1995-6-16"> 
+        <input type="submit">
       </form>
     </div>
     
