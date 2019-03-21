@@ -19,16 +19,21 @@
   </head>
   <body id="result-body">
     <div class="container, result-info">
+      <!--displays the data from the hash of the nasa api (which are now instance variables of the pod class)-->
      <h1><%=@result.title%></h1>
-     <h2><%=@result.date%></h2>
+     <h1><%=@result.date%></h1>
      <%if @result.media_type=="image"%>
        <img src=<%="#{@result.media_url}"%>>
      <%else%>
-     <%puts @result.media_url%>
      <iframe src=<%="#{@result.media_url}"%>  allowfullscreen></iframe> 
      <% end %>
+        <h3><%=@result.copyright%></h3>
      <br></br>
-     <p style=" padding-right: 150px;  padding-left: 150px;"><%=@result.explanation %></p>
+     <p><%=@result.explanation %></p>
+     <br>
+      <a href='javascript:history.back()'><button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-chevron-left"></span> Back
+        </button></a>
     </div>
   </body>
 </html

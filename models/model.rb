@@ -26,6 +26,8 @@ class Pod
     end
 end
 
+
+
 # today= Pod.new("2019-03-05")
 # puts today.media_url
 

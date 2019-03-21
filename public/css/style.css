@@ -2,7 +2,7 @@
      /*background: linear-gradient(to bottom right, black, #1b3a45);*/
      background-color: black;
      /*background-image: url('https://media.giphy.com/media/ylyUQm5gsWrCkIJl3q/giphy.gif');*/
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media3.giphy.com/media/wJ7x8yjRC73zO/giphy.gif?cid=3640f6095c92d34f4d42714e324df17f');
+     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://media3.giphy.com/media/wJ7x8yjRC73zO/giphy.gif?cid=3640f6095c92d34f4d42714e324df17f');
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -55,7 +55,10 @@
     font-family: 'Megrim', cursive;
     color: purple;
  }
- 
+ p{
+   padding-right: 10%;
+   padding-left: 10%;
+ }
  img{
  width:50%; 
  height:auto;
