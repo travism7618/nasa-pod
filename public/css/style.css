@@ -60,6 +60,22 @@
    padding-left: 10%;
  }
  img{
- width:50%; 
+ width:90%; 
  height:auto;
  }
+ 
+@media(min-width:768px) {
+ img{
+  width:60%; 
+ }
+}
+
+@media(min-width:992px) {
+ img{
+  width:50%; 
+ }
+}
+
+@media(min-width:1200px) {
+
+}
