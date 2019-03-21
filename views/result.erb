@@ -15,18 +15,20 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto+Slab" rel="stylesheet">
   </head>
-  <body>
-    
-    <div class="container-fluid">
+  <body id="result-body">
+    <div class="container, result-info">
      <h1><%=@result.title%></h1>
      <h2><%=@result.date%></h2>
      <%if @result.media_type=="image"%>
-       <img style="width:70%; height:auto;"src=<%="#{@result.media_url}"%>>
+       <img src=<%="#{@result.media_url}"%>>
      <%else%>
      <%puts @result.media_url%>
      <iframe src=<%="#{@result.media_url}"%>  allowfullscreen></iframe> 
      <% end %>
-     <p><%=@result.explanation %></p>
+     <br></br>
+     <p style=" padding-right: 150px;  padding-left: 150px;"><%=@result.explanation %></p>
     </div>
+  </body>
 </html
