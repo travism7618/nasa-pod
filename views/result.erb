@@ -19,9 +19,10 @@
   </head>
   <body id="result-body">
     <div class="container, result-info">
-      <!--displays the data from the hash of the nasa api (which are now instance variables of the pod class)-->
-     <h1><%=@result.title%></h1>
+      <!--displays the data from the hash of the nasa api (which are now instance variables)-->
+     <h1><%=@result.title%></h1> 
      <h1><%=@result.date%></h1>
+     <!--depending on the media type, it needs its unique html tags so the following code checks the media type and then puts in its respective tags-->
      <%if @result.media_type=="image"%>
        <img src=<%="#{@result.media_url}"%>>
      <%else%>
@@ -31,6 +32,7 @@
      <br></br>
      <p><%=@result.explanation %></p>
      <br>
+     <!--A back button to go back to the previous page-->
       <a href='javascript:history.back()'><button type="button" class="btn btn-default btn-sm">
           <span class="glyphicon glyphicon-chevron-left"></span> Back
         </button></a>

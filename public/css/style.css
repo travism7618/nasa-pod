@@ -1,81 +1,78 @@
- #index-body{
-     /*background: linear-gradient(to bottom right, black, #1b3a45);*/
-     background-color: black;
-     /*background-image: url('https://media.giphy.com/media/ylyUQm5gsWrCkIJl3q/giphy.gif');*/
-     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://media3.giphy.com/media/wJ7x8yjRC73zO/giphy.gif?cid=3640f6095c92d34f4d42714e324df17f');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 100%;
-     width: 100%;
-     /*padding:0;*/
-     /*margin:0;*/
- }
-  #result-body{
-     /*background: linear-gradient(to bottom right, black, #1b3a45);*/
-     background-color: black;
-     /*background-image: url('https://media.giphy.com/media/ylyUQm5gsWrCkIJl3q/giphy.gif');*/
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media0.giphy.com/media/l2QEj7ksEKw8Ten6M/giphy.gif?cid=3640f6095c92d80f4a4a447249aada8e');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 100%;
-     width: 100%;
-     /*padding:0;*/
-     /*margin:0;*/
- }
- 
- 
- .result-info{
-     text-align: center;
- }
- .center {
-     left: 0;
-     margin-top: -100px;
-     position: absolute;
-     text-align: center;
-     top: 50%;
-     width: 100%;
- }
+/*Sets both bodies of index and result to a seperate gif animations */
 
- h1 {
-     /*color:#a5c9d4;*/
-     /*color:#ff9469;*/
-     /*color: #DEf7ff;*/
-     color: white;
-    font-family: 'Megrim', cursive;
-    font-size: 50px;
-     font-weight: 900;
- }
- p{
-    color: white;
-    font-family: 'Roboto Slab', serif;
- }
- input{
-    font-family: 'Megrim', cursive;
-    color: purple;
- }
- p{
-   padding-right: 10%;
-   padding-left: 10%;
- }
- img{
- width:90%; 
- height:auto;
- }
- 
+body {
+ background-color: black;
+ background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://media3.giphy.com/media/wJ7x8yjRC73zO/giphy.gif?cid=3640f6095c92d34f4d42714e324df17f');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100%;
+ width: 100%;
+}
+
+#result-body {
+ background-color: black;
+ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media0.giphy.com/media/l2QEj7ksEKw8Ten6M/giphy.gif?cid=3640f6095c92d80f4a4a447249aada8e');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100%;
+ width: 100%;
+}
+
+
+.result-info {
+ text-align: center;
+}
+
+/*For all dives that need to be centered*/
+
+.center {
+ left: 0;
+ margin-top: -100px;
+ position: absolute;
+ text-align: center;
+ top: 50%;
+ width: 100%;
+}
+
+h1 {
+ color: white;
+ font-family: 'Megrim', cursive;
+ font-size: 50px;
+ font-weight: 900;
+}
+
+p {
+ color: white;
+ font-family: 'Roboto Slab', serif;
+}
+
+input {
+ font-family: 'Megrim', cursive;
+ color: purple;
+}
+
+p {
+ padding-right: 10%;
+ padding-left: 10%;
+}
+
+img {
+ width: 90%;
+ height: auto;
+}
+
 @media(min-width:768px) {
- img{
-  width:60%; 
+ img {
+  width: 60%;
  }
 }
 
 @media(min-width:992px) {
- img{
-  width:50%; 
+ img {
+  width: 50%;
  }
 }
 
-@media(min-width:1200px) {
-
-}
+@media(min-width:1200px) {}
